@@ -2,7 +2,8 @@
 
 OpenFLOW is a powerful, open-source Progressive Web App (PWA) for creating beautiful isometric diagrams. Built with React and the Isoflow library, it runs entirely in your browser with offline support.
 
-![OpenFLOW Payment Flow Example](screenshots/payment-flow-example.png)
+![Screenshot_20250630_160954](https://github.com/user-attachments/assets/0e6e1adf-939b-46c6-945c-5bc07ca255ef)
+
 
 ## Features
 
