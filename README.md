@@ -9,23 +9,17 @@ OpenFLOW is a powerful, open-source Progressive Web App (PWA) for creating beaut
 
 - 🎨 **Isometric Diagramming** - Create stunning 3D-style technical diagrams
 - 💾 **Auto-Save** - Your work is automatically saved every 5 seconds
-- 📱 **PWA Support** - Install as a native app on Mac and Linux
 - 🔒 **Privacy-First** - All data stored locally in your browser
 - 📤 **Import/Export** - Share diagrams as JSON files
-- 🎯 **Session Storage** - Quick save without dialogs
 - 🌐 **Offline Support** - Work without internet connection
 
 ## Quick Start
 
-### Option 1: Use Online (Recommended)
-
-Visit the deployed version at: `[your-deployment-url]`
-
-### Option 2: Run Locally
+### Run Locally
 
 ```bash
 # Clone the repository
-git clone [repository-url]
+git clone https://github.com/stan-smith/OpenFLOW
 cd openflow-local
 
 # Install dependencies
@@ -36,28 +30,6 @@ npm start
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-### Option 3: Install as PWA
-
-1. Visit the app in Chrome or Edge
-2. Click the install icon in the address bar
-3. Or go to menu → "Install OpenFLOW..."
-4. Launch from your dock/desktop like a native app
-
-## Example: E-Commerce Payment Flow
-
-OpenFLOW comes with a comprehensive payment flow example that demonstrates advanced diagramming capabilities. This example shows:
-
-- **20+ Components**: From customers to banking APIs
-- **Multi-layered Architecture**: Frontend, backend, and infrastructure
-- **Security Flow**: Authentication and fraud detection
-- **Real-world Integrations**: CDN, cache, queue, monitoring
-- **Numbered Flow**: Step-by-step payment processing
-
-To load this example:
-1. Click "Import" in the app
-2. Select `src/paymentFlowExample.json`
-3. Explore the complete payment processing architecture
 
 ## How to Use
 
