@@ -1,46 +1,162 @@
-# Getting Started with Create React App
+# OpenFLOW - Isometric Diagramming Tool
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+OpenFLOW is a powerful, open-source Progressive Web App (PWA) for creating beautiful isometric diagrams. Built with React and the Isoflow library, it runs entirely in your browser with offline support.
 
-## Available Scripts
+![OpenFLOW Payment Flow Example](screenshots/payment-flow-example.png)
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- 🎨 **Isometric Diagramming** - Create stunning 3D-style technical diagrams
+- 💾 **Auto-Save** - Your work is automatically saved every 5 seconds
+- 📱 **PWA Support** - Install as a native app on Mac and Linux
+- 🔒 **Privacy-First** - All data stored locally in your browser
+- 📤 **Import/Export** - Share diagrams as JSON files
+- 🎯 **Session Storage** - Quick save without dialogs
+- 🌐 **Offline Support** - Work without internet connection
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Quick Start
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Option 1: Use Online (Recommended)
 
-### `npm test`
+Visit the deployed version at: `[your-deployment-url]`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Option 2: Run Locally
 
-### `npm run build`
+```bash
+# Clone the repository
+git clone [repository-url]
+cd openflow-local
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Install dependencies
+npm install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Start development server
+npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-### `npm run eject`
+### Option 3: Install as PWA
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. Visit the app in Chrome or Edge
+2. Click the install icon in the address bar
+3. Or go to menu → "Install OpenFLOW..."
+4. Launch from your dock/desktop like a native app
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Example: E-Commerce Payment Flow
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+OpenFLOW comes with a comprehensive payment flow example that demonstrates advanced diagramming capabilities. This example shows:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- **20+ Components**: From customers to banking APIs
+- **Multi-layered Architecture**: Frontend, backend, and infrastructure
+- **Security Flow**: Authentication and fraud detection
+- **Real-world Integrations**: CDN, cache, queue, monitoring
+- **Numbered Flow**: Step-by-step payment processing
 
-## Learn More
+To load this example:
+1. Click "Import" in the app
+2. Select `src/paymentFlowExample.json`
+3. Explore the complete payment processing architecture
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## How to Use
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Creating Diagrams
+
+1. **Add Items**: Drag and drop components from the library onto the canvas
+2. **Connect Items**: Use connectors to show relationships between components
+3. **Customize**: Change colors, labels, and properties of items
+4. **Navigate**: Pan and zoom to work on different areas
+
+### Saving Your Work
+
+- **Auto-Save**: Diagrams are automatically saved to browser storage every 5 seconds
+- **Quick Save**: Click "Quick Save (Session)" for instant saves without popups
+- **Save As**: Use "Save New" to create a copy with a different name
+
+### Managing Diagrams
+
+- **Load**: Click "Load" to see all your saved diagrams
+- **Import**: Load diagrams from JSON files shared by others
+- **Export**: Download your diagrams as JSON files to share or backup
+- **Storage**: Use "Storage Manager" to manage browser storage space
+
+### Keyboard Shortcuts
+
+- `Delete` - Remove selected items
+- `Ctrl/Cmd + Z` - Undo (if supported by browser)
+- Mouse wheel - Zoom in/out
+- Click and drag - Pan around canvas
+
+## Building for Production
+
+```bash
+# Create optimized production build
+npm run build
+
+# Serve the production build locally
+npx serve -s build
+```
+
+The build folder contains all files needed for deployment.
+
+## Deployment
+
+### Static Hosting
+
+Deploy the `build` folder to any static hosting service:
+- GitHub Pages
+- Netlify
+- Vercel
+- AWS S3
+- Any web server
+
+### Important Notes
+
+1. **HTTPS Required**: PWA features require HTTPS (except localhost)
+2. **Browser Storage**: Diagrams are saved in browser localStorage (~5-10MB limit)
+3. **Backup**: Regularly export important diagrams as JSON files
+
+## Browser Support
+
+- Chrome/Edge (Recommended) ✅
+- Firefox ✅
+- Safari ✅
+- Mobile browsers with PWA support ✅
+
+## Troubleshooting
+
+### Storage Full
+- Use Storage Manager to free space
+- Export and delete old diagrams
+- Clear browser data (last resort - will delete all diagrams)
+
+### Can't Install PWA
+- Ensure using HTTPS
+- Try Chrome or Edge browsers
+- Check if already installed
+
+### Lost Diagrams
+- Check browser's localStorage
+- Look for auto-saved versions
+- Always export important work
+
+## Technology Stack
+
+- **React** - UI framework
+- **TypeScript** - Type safety
+- **Isoflow** - Isometric diagram engine
+- **PWA** - Offline-first web app
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+MIT
+
+## Acknowledgments
+
+Built with the [Isoflow](https://github.com/isoflow/isoflow) library.
+
+x0z.co
