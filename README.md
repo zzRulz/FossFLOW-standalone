@@ -4,6 +4,9 @@ OpenFLOW is a powerful, open-source Progressive Web App (PWA) for creating beaut
 
 ![Screenshot_20250630_160954](https://github.com/user-attachments/assets/0e6e1adf-939b-46c6-945c-5bc07ca255ef)
 
+- **📝 [ISOFLOW_TODO.md](https://github.com/stan-smith/isoflow/blob/main/ISOFLOW_TODO.md)** - Current issues and roadmap with codebase mappings, most gripes are with the isoflow library itself.
+- **🤝 [CONTRIBUTORS.md](https://github.com/stan-smith/isoflow/blob/main/CONTRIBUTORS.md)** - How to contribute to the project.
+
 
 ## Features
 
