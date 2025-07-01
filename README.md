@@ -130,6 +130,7 @@ MIT
 
 ## Acknowledgments
 
-Built with the [Isoflow](https://github.com/isoflow/isoflow) library.
+Built with the ISOFLOW (https://github.com/markmanx/isoflow) library.
 
+Check out my website:
 x0z.co
