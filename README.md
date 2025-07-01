@@ -126,7 +126,8 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
-MIT
+MIT - Isoflow community edition is released under the MIT license.
+Unlicense - OpenFLOW is released under the unlicense license, you can modify and distribute it however you please, I don't care.
 
 ## Acknowledgments
 
