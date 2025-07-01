@@ -23,7 +23,7 @@ OpenFLOW is a powerful, open-source Progressive Web App (PWA) for creating beaut
 ```bash
 # Clone the repository
 git clone https://github.com/stan-smith/OpenFLOW
-cd openflow-local
+cd OpenFLOW
 
 # Install dependencies
 npm install
