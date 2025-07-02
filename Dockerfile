@@ -1,13 +1,12 @@
-FROM node:22-alpine
-
-USER node
+FROM node:24-alpine AS builder
 WORKDIR /opt/openflow
+COPY . .
+RUN npm ci && npm run build
 
-COPY --chown=node:node package*.json ./
-RUN npm ci && npm cache clean --force
-
-COPY --chown=node:node . .
-
+FROM busybox:1.37
+RUN adduser -D static
+USER static
+WORKDIR /home/static
+COPY --chown=static:static --from=builder /opt/openflow/dist ./
 EXPOSE 3000
-
-CMD ["npm", "start", "--", "--port", "3000", "--strictPort", "--host", "0"]
+CMD ["busybox", "httpd", "-f",  "-p", "3000"]

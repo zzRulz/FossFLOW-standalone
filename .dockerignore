@@ -1,5 +1,6 @@
 *.log
 .env
 .git
+Dockerfile
 dist
 node_modules
