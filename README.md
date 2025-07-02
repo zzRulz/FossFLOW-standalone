@@ -22,16 +22,10 @@ FossFLOW is a powerful, open-source Progressive Web App (PWA) for creating beaut
 
 ## Quick Start
 
-### Option 1: Use Online (Recommended)
-
-Visit the deployed version at: `[your-deployment-url]`
-
-### Option 2: Run Locally
-
 ```bash
 # Clone the repository
-git clone [repository-url]
-cd fossflow-local
+git clone [[repository-url]](https://github.com/stan-smith/FossFLOW)
+cd FossFLOW
 
 # Install dependencies
 npm install
@@ -41,28 +35,6 @@ npm start
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-### Option 3: Install as PWA
-
-1. Visit the app in Chrome or Edge
-2. Click the install icon in the address bar
-3. Or go to menu → "Install FossFLOW..."
-4. Launch from your dock/desktop like a native app
-
-## Example: E-Commerce Payment Flow
-
-FossFLOW comes with a comprehensive payment flow example that demonstrates advanced diagramming capabilities. This example shows:
-
-- **20+ Components**: From customers to banking APIs
-- **Multi-layered Architecture**: Frontend, backend, and infrastructure
-- **Security Flow**: Authentication and fraud detection
-- **Real-world Integrations**: CDN, cache, queue, monitoring
-- **Numbered Flow**: Step-by-step payment processing
-
-To load this example:
-1. Click "Import" in the app
-2. Select `src/paymentFlowExample.json`
-3. Explore the complete payment processing architecture
 
 ## How to Use
 
