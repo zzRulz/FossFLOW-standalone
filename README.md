@@ -24,8 +24,10 @@ FossFLOW is a powerful, open-source Progressive Web App (PWA) for creating beaut
 
 ```bash
 # Clone the repository
-git clone [[repository-url]](https://github.com/stan-smith/FossFLOW)
+git clone (https://github.com/stan-smith/FossFLOW)
 cd FossFLOW
+
+# Make sure you have npm installed
 
 # Install dependencies
 npm install
