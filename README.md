@@ -61,7 +61,6 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 ### Keyboard Shortcuts
 
 - `Delete` - Remove selected items
-- `Ctrl/Cmd + Z` - Undo (if supported by browser)
 - Mouse wheel - Zoom in/out
 - Click and drag - Pan around canvas
 
@@ -131,7 +130,9 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
-MIT
+Isoflow is released under the MIT license.
+
+FossFLOW is released under the Unlicense license, do what you want with it.
 
 ## Acknowledgments
 
