@@ -1,4 +1,5 @@
-node_modules
-.git
-.env
 *.log
+.env
+.git
+dist
+node_modules
