@@ -34,7 +34,7 @@
   color: #666;
 }
 
-.openflow-container {
+.fossflow-container {
   flex: 1;
   width: 100%;
   position: relative;
@@ -43,7 +43,7 @@
 }
 
 /* Ensure Isoflow takes full height */
-.openflow-container > div {
+.fossflow-container > div {
   height: 100%;
 }
 

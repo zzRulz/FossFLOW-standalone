@@ -37,7 +37,7 @@ function App() {
   const [showExportDialog, setShowExportDialog] = useState(false);
   const [importJson, setImportJson] = useState('');
   const fileInputRef = useRef<HTMLInputElement>(null);
-  const [openflowKey, setOpenflowKey] = useState(0); // Key to force re-render of OpenFLOW
+  const [fossflowKey, setFossflowKey] = useState(0); // Key to force re-render of FossFLOW
   const [currentModel, setCurrentModel] = useState<DiagramData | null>(null); // Store current model state
   const [hasUnsavedChanges, setHasUnsavedChanges] = useState(false);
   const [lastAutoSave, setLastAutoSave] = useState<Date | null>(null);
@@ -58,7 +58,7 @@ function App() {
   
   const [diagramData, setDiagramData] = useState<DiagramData>({
     title: 'Untitled Diagram',
-    icons: icons, // Keep full icon set for OpenFLOW
+    icons: icons, // Keep full icon set for FossFLOW
     colors: defaultColors,
     items: [],
     views: [],
@@ -67,14 +67,14 @@ function App() {
 
   // Load diagrams from localStorage on component mount
   useEffect(() => {
-    const savedDiagrams = localStorage.getItem('openflow-diagrams');
+    const savedDiagrams = localStorage.getItem('fossflow-diagrams');
     if (savedDiagrams) {
       setDiagrams(JSON.parse(savedDiagrams));
     }
     
     // Load last opened diagram
-    const lastOpenedId = localStorage.getItem('openflow-last-opened');
-    const lastOpenedData = localStorage.getItem('openflow-last-opened-data');
+    const lastOpenedId = localStorage.getItem('fossflow-last-opened');
+    const lastOpenedData = localStorage.getItem('fossflow-last-opened-data');
     
     if (lastOpenedId && lastOpenedData) {
       try {
@@ -113,7 +113,7 @@ function App() {
           icons: [] // Don't store icons with each diagram
         }
       }));
-      localStorage.setItem('openflow-diagrams', JSON.stringify(diagramsToStore));
+      localStorage.setItem('fossflow-diagrams', JSON.stringify(diagramsToStore));
     } catch (e) {
       console.error('Failed to save diagrams:', e);
       if (e instanceof DOMException && e.name === 'QuotaExceededError') {
@@ -162,8 +162,8 @@ function App() {
     
     // Save as last opened
     try {
-      localStorage.setItem('openflow-last-opened', newDiagram.id);
-      localStorage.setItem('openflow-last-opened-data', JSON.stringify(newDiagram.data));
+      localStorage.setItem('fossflow-last-opened', newDiagram.id);
+      localStorage.setItem('fossflow-last-opened-data', JSON.stringify(newDiagram.data));
     } catch (e) {
       console.error('Failed to save diagram:', e);
       if (e instanceof DOMException && e.name === 'QuotaExceededError') {
@@ -188,14 +188,14 @@ function App() {
     setDiagramName(diagram.name);
     setDiagramData(dataWithIcons);
     setCurrentModel(dataWithIcons);
-    setOpenflowKey(prev => prev + 1); // Force re-render of OpenFLOW
+    setFossflowKey(prev => prev + 1); // Force re-render of FossFLOW
     setShowLoadDialog(false);
     setHasUnsavedChanges(false);
     
     // Save as last opened (without icons)
     try {
-      localStorage.setItem('openflow-last-opened', diagram.id);
-      localStorage.setItem('openflow-last-opened-data', JSON.stringify(diagram.data));
+      localStorage.setItem('fossflow-last-opened', diagram.id);
+      localStorage.setItem('fossflow-last-opened-data', JSON.stringify(diagram.data));
     } catch (e) {
       console.error('Failed to save last opened:', e);
     }
@@ -229,12 +229,12 @@ function App() {
       setDiagramName('');
       setDiagramData(emptyDiagram);
       setCurrentModel(emptyDiagram); // Reset current model too
-      setOpenflowKey(prev => prev + 1); // Force re-render of OpenFLOW
+      setFossflowKey(prev => prev + 1); // Force re-render of FossFLOW
       setHasUnsavedChanges(false);
       
       // Clear last opened
-      localStorage.removeItem('openflow-last-opened');
-      localStorage.removeItem('openflow-last-opened-data');
+      localStorage.removeItem('fossflow-last-opened');
+      localStorage.removeItem('fossflow-last-opened-data');
     }
   };
 
@@ -252,7 +252,7 @@ function App() {
         ...model,
         // Ensure we always have required fields
         title: model.title || prevModel?.title || diagramData.title || diagramName || 'Untitled',
-        // Keep icons in the data structure for OpenFLOW to work
+        // Keep icons in the data structure for FossFLOW to work
         icons: icons, // Always use full icon set
         colors: model.colors || prevModel?.colors || diagramData.colors || [],
         // These fields likely come from the model update
@@ -313,7 +313,7 @@ function App() {
         setDiagramData(mergedData);
         setDiagramName(parsedData.title || 'Imported Diagram');
         setCurrentModel(mergedData);
-        setOpenflowKey(prev => prev + 1); // Force re-render
+        setFossflowKey(prev => prev + 1); // Force re-render
         setShowImportDialog(false);
         setHasUnsavedChanges(true);
         
@@ -369,7 +369,7 @@ function App() {
       
       // Update last opened data
       try {
-        localStorage.setItem('openflow-last-opened-data', JSON.stringify(savedData));
+        localStorage.setItem('fossflow-last-opened-data', JSON.stringify(savedData));
         setLastAutoSave(new Date());
         setHasUnsavedChanges(false);
       } catch (e) {
@@ -441,9 +441,9 @@ function App() {
         </span>
       </div>
 
-      <div className="openflow-container">
+      <div className="fossflow-container">
         <Isoflow 
-          key={openflowKey}
+          key={fossflowKey}
           initialData={diagramData}
           onModelUpdated={handleModelUpdated}
           editorMode="EDITABLE"

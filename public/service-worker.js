@@ -1,4 +1,4 @@
-const CACHE_NAME = 'openflow-v1';
+const CACHE_NAME = 'fossflow-v1';
 const urlsToCache = [
   '/',
   '/static/css/main.css',

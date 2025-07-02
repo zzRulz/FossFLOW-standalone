@@ -1,8 +1,10 @@
-# OpenFLOW - Isometric Diagramming Tool
+# FossFLOW - Isometric Diagramming Tool
 
-OpenFLOW is a powerful, open-source Progressive Web App (PWA) for creating beautiful isometric diagrams. Built with React and the Isoflow library, it runs entirely in your browser with offline support.
+FossFLOW is a powerful, open-source Progressive Web App (PWA) for creating beautiful isometric diagrams. Built with React and the Isoflow library, it runs entirely in your browser with offline support.
 
-![Screenshot_20250630_160954](https://github.com/user-attachments/assets/0e6e1adf-939b-46c6-945c-5bc07ca255ef)
+![FossFLOW Payment Flow Example](screenshots/payment-flow-example.png)
+
+
 
 - **📝 [ISOFLOW_TODO.md](https://github.com/stan-smith/isoflow/blob/main/ISOFLOW_TODO.md)** - Current issues and roadmap with codebase mappings, most gripes are with the isoflow library itself.
 - **🤝 [CONTRIBUTORS.md](https://github.com/stan-smith/isoflow/blob/main/CONTRIBUTORS.md)** - How to contribute to the project.
@@ -12,18 +14,24 @@ OpenFLOW is a powerful, open-source Progressive Web App (PWA) for creating beaut
 
 - 🎨 **Isometric Diagramming** - Create stunning 3D-style technical diagrams
 - 💾 **Auto-Save** - Your work is automatically saved every 5 seconds
+- 📱 **PWA Support** - Install as a native app on Mac and Linux
 - 🔒 **Privacy-First** - All data stored locally in your browser
 - 📤 **Import/Export** - Share diagrams as JSON files
+- 🎯 **Session Storage** - Quick save without dialogs
 - 🌐 **Offline Support** - Work without internet connection
 
 ## Quick Start
 
-### Run Locally
+### Option 1: Use Online (Recommended)
+
+Visit the deployed version at: `[your-deployment-url]`
+
+### Option 2: Run Locally
 
 ```bash
 # Clone the repository
-git clone https://github.com/stan-smith/OpenFLOW
-cd openflow-local
+git clone [repository-url]
+cd fossflow-local
 
 # Install dependencies
 npm install
@@ -33,6 +41,28 @@ npm start
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### Option 3: Install as PWA
+
+1. Visit the app in Chrome or Edge
+2. Click the install icon in the address bar
+3. Or go to menu → "Install FossFLOW..."
+4. Launch from your dock/desktop like a native app
+
+## Example: E-Commerce Payment Flow
+
+FossFLOW comes with a comprehensive payment flow example that demonstrates advanced diagramming capabilities. This example shows:
+
+- **20+ Components**: From customers to banking APIs
+- **Multi-layered Architecture**: Frontend, backend, and infrastructure
+- **Security Flow**: Authentication and fraud detection
+- **Real-world Integrations**: CDN, cache, queue, monitoring
+- **Numbered Flow**: Step-by-step payment processing
+
+To load this example:
+1. Click "Import" in the app
+2. Select `src/paymentFlowExample.json`
+3. Explore the complete payment processing architecture
 
 ## How to Use
 
@@ -129,12 +159,10 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
-MIT - Isoflow community edition is released under the MIT license.
-Unlicense - OpenFLOW is released under the unlicense license, you can modify and distribute it however you please, I don't care.
+MIT
 
 ## Acknowledgments
 
-Built with the ISOFLOW (https://github.com/markmanx/isoflow) library.
+Built with the [Isoflow](https://github.com/markmanx/isoflow) library.
 
-Check out my website:
 x0z.co

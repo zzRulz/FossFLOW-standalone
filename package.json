@@ -1,5 +1,5 @@
 {
-  "name": "openflow-local",
+  "name": "fossflow-local",
   "version": "1.0",
   "private": true,
   "dependencies": {
