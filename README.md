@@ -79,6 +79,12 @@ npx serve -s build
 
 The build folder contains all files needed for deployment.
 
+If you need the app to be deployed to a custom path (i.e. not root), use instead:
+```bash
+# Create optimized production build for given path
+PUBLIC_URL="https://mydomain.tld/path/to/app" npm run build
+```
+
 ## Deployment
 
 ### Static Hosting
