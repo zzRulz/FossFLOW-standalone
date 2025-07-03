@@ -84,6 +84,7 @@ If you need the app to be deployed to a custom path (i.e. not root), use instead
 # Create optimized production build for given path
 PUBLIC_URL="https://mydomain.tld/path/to/app" npm run build
 ```
+That will add the defined `PUBLIC_URL` as a prefix to all links to static files.
 
 ## Deployment
 
