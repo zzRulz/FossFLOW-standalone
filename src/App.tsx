@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { Isoflow } from 'isoflow';
+import { Isoflow } from 'fossflow';
 import { flattenCollections } from '@isoflow/isopacks/dist/utils';
 import isoflowIsopack from '@isoflow/isopacks/dist/isoflow';
 import awsIsopack from '@isoflow/isopacks/dist/aws';
