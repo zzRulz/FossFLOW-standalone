@@ -6,8 +6,8 @@ FossFLOW is a powerful, open-source Progressive Web App (PWA) for creating beaut
 
 
 
-- **📝 [ISOFLOW_TODO.md](https://github.com/stan-smith/isoflow/blob/main/ISOFLOW_TODO.md)** - Current issues and roadmap with codebase mappings, most gripes are with the isoflow library itself.
-- **🤝 [CONTRIBUTORS.md](https://github.com/stan-smith/isoflow/blob/main/CONTRIBUTORS.md)** - How to contribute to the project.
+- **📝 [FOSSFLOW_TODO.md](https://github.com/stan-smith/fossflow-lib/blob/main/ISOFLOW_TODO.md)** - Current issues and roadmap with codebase mappings, most gripes are with the isoflow library itself.
+- **🤝 [CONTRIBUTORS.md](https://github.com/stan-smith/fossflow-lib/blob/main/CONTRIBUTORS.md)** - How to contribute to the project.
 
 
 ## Features
@@ -65,7 +65,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 - `Delete` - Remove selected items
 - Mouse wheel - Zoom in/out
 - Click and drag - Pan around canvas
-- ***NEW*** Crtl+z undo Ctrl+y redo
+- ***NEW*** Crtl+Z undo Ctrl+Y redo
 
 ## Building for Production
 
