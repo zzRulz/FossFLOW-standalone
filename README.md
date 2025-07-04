@@ -22,7 +22,7 @@ FossFLOW is a powerful, open-source Progressive Web App (PWA) for creating beaut
 
 ## Try it online
 
-Go to https://stan-smith.github.io/FossFLOW/
+Go to ***https://stan-smith.github.io/FossFLOW/***
 
 ## Quick start on local environment
 
