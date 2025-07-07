@@ -46,7 +46,9 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ### Creating Diagrams
 
-1. **Add Items**: Press the “+” button on the top right menu, the library of components will appear on the left. Drag and drop components from the library onto the canvas
+1. **Add Items**:
+  - Press the "+" button on the top right menu, the library of components will appear on the left. Drag and drop components from the library onto the canvas
+  - Or, perform a right click on the grid and select "Add node", you can then click on the new node you created and customise it from the left menu
 2. **Connect Items**: Use connectors to show relationships between components
 3. **Customize**: Change colors, labels, and properties of items
 4. **Navigate**: Pan and zoom to work on different areas
