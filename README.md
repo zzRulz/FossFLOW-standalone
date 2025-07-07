@@ -20,9 +20,7 @@ FossFLOW is a powerful, open-source Progressive Web App (PWA) for creating beaut
 - 🎯 **Session Storage** - Quick save without dialogs
 - 🌐 **Offline Support** - Work without internet connection
 
-## Try it online
-
-Go to ***https://stan-smith.github.io/FossFLOW/***
+***Online version unnder construction currently***
 
 ## Quick start on local environment
 
