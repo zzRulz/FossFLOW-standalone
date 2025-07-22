@@ -1,5 +1,9 @@
 # FossFLOW - Isometric Diagramming Tool
 
+
+https://coff.ee/stan.smith - This will always be free, but here's how you can support development :)
+
+
 FossFLOW is a powerful, open-source Progressive Web App (PWA) for creating beautiful isometric diagrams. Built with React and the Isoflow (Now forked and published to NPM as fossflow) library, it runs entirely in your browser with offline support.
 
 ![Screenshot_20250630_160954](https://github.com/user-attachments/assets/e7f254ad-625f-4b8a-8efc-5293b5be9d55)
